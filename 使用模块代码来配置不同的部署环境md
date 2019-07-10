@@ -1,2 +1,14 @@
 # learningLog
 python learning
+
+import sys
+
+class Win32Database(object):
+#...
+class PosixDatabase(object):
+#...
+
+if sys.platform.startswith('Win32'):
+    Database=Win32Database
+else:
+    Database=PosixDatabase
